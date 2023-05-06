@@ -1,0 +1,39 @@
+{
+    "name": "rumus_bin/open_ai_api_client",
+    "description": "This API client for get access for open AI",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "RumusBin\\OpenAiApiClient\\": "src/",
+            "RumusBin\\OpenAiApiClient\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "RumusBin",
+            "email": "komlikov.r@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.1",
+        "psr/http-client": "^1.0",
+        "psr/http-factory": "^1.0",
+        "php-http/client-common": "^2.6",
+        "php-http/discovery": "^1.18"
+    },
+    "suggest": {
+        "psr/http-client-implementation": "Required for using this package"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    },
+    "require-dev": {
+        "guzzlehttp/guzzle": "^7.5",
+        "phpunit/phpunit": "^10.1",
+        "nyholm/nsa": "^1.3"
+    }
+}
