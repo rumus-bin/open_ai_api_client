@@ -53,6 +53,7 @@ class OpenAiApiClient
     /**
      * @return EngineModelCollection
      * @throws ClientExceptionInterface
+     * @throws Exception\DomainException
      */
     public function listAiModels(): EngineModelCollection
     {
